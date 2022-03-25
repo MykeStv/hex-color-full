@@ -5,7 +5,7 @@ import reactor.core.publisher.Mono;
 
 public interface ColorService {
 
-    Mono<String> saveColor(Color color);
+    Mono<Color> saveColor(Color color);
 
     Mono<Void> deleteColor(String id);
 
