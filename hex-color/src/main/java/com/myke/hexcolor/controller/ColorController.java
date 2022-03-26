@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 import static java.util.stream.Collectors.joining;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping(path = "/color")
 public class ColorController {
 

@@ -2,14 +2,21 @@ import { colorActions } from '../constant/actionTypes'
 
 
 
-const reducer = (state = {colors:{}}, action) => {
-    switch (action.types) {
+const reducer = (state = {colors:[]}, action) => {
+    
+    switch (action.type) {
         case colorActions.GET:
-            return ;
+            return { 
+                ...state, colors: action.data
+            }
         case colorActions.CREATE:
-            return ;
+            return {
+                ...state, colors: [ ...state.colors, action.data]
+            }
         case colorActions.DELETE:
-            return ;
+            return {
+                ...state, colors: []
+            };
         
         default:
             return state;
