@@ -5,15 +5,23 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
-@Document(collection = "hexcolors")
+@Document(collection = "hexcolor")
 public class Color {
     // ATTRIBUTES
     @Id
     private String id;
     private String color;
+
     private LocalDateTime dateTime;
 
     //CONSTRUCTOR
+    public Color() {
+    }
+
+    public Color(String color) {
+        this.color = color;
+        this.dateTime = LocalDateTime.now();
+    }
 
     //GETTER && SETTER
     public String getId() {
