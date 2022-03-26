@@ -1,12 +1,95 @@
-.container {
+/* ---- HEADER ---- */
+.header {
+  background: #20232a;
+  color: #cd57fd;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar {
-  background: rgb(230, 230, 230);
-  height: 4rem;
+.header h1 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* ---- SECTION ---- */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem 0;
+}
+
+/* --- RANDOMCOLOR --- */
+.content {
+  box-shadow: 0px 0px 10px #56575a;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn-container {
   text-align: center;
 }
 
-.navbar h1 {
-  margin: 0;
+.color-container {
+  padding: 1rem;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -- BTN -- */
+.btn {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.17s;
+  margin: 5px;
+}
+.btn-create {
+  background-color: #cd57fd;
+}
+.btn-create:hover {
+  background-color: #a715e3;
+}
+.btn-delete {
+  background-color: #f53c92;
+}
+.btn-delete:hover {
+  background-color: #e31072;
+}
+
+/* --- COLOR --- */
+.color-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.color-card {
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+.color-card:hover {
+  box-shadow: 0px 0px 7px #d8d4dd;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+  background: #796f85;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.05rem;
+  width: 100vw;
+  height: 2rem;
+  padding-top: 10px;
 }

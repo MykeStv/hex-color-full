@@ -16,13 +16,14 @@ const Color = ({ hexColor }) => {
     }
 
     return (
-        <>
-            <div style={styleColor}>
-                <span style={{ color: '#000' }}>{hexColor.color}</span>
-                <span style={{ color: '#fff' }}>{hexColor.color}</span>
+        <div className='color-content'>
+            <div className='color-card'>
+                <div style={styleColor}>
+                    <span style={{ color: '#000' }}>{hexColor.color}</span>
+                    <span style={{ color: '#fff' }}>{hexColor.color}</span>
+                </div>
             </div>
-
-        </>
+        </div>
     )
 }
 

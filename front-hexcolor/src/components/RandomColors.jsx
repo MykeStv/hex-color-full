@@ -20,20 +20,24 @@ const RandomColors = () => {
     }, [])
 
     return (
-        <>
-            <div>
-                <button onClick={() => { createColor() }}>Create hexcolor</button>
-                <button onClick={() => { deleteColors() }}>Delete all</button>
+        <div className='content'>
+            <div className='btn-container'>
+                <button className='btn btn-create' onClick={() => { createColor() }}>
+                    Create hexcolor
+                </button>
+                <button className='btn btn-delete' onClick={() => { deleteColors() }}>
+                    Delete all
+                </button>
             </div>
 
-            <div>
+            <div className='color-container'>
                 {
                     hexcolor.map(color => (
                         <Color key={color.id} hexColor={color} />
                     ))
                 }
             </div>
-        </>
+        </div>
     )
 }
 

@@ -3,15 +3,15 @@ import RandomColors from '../components/RandomColors'
 
 const index = () => {
     return (
-        <div className='container'>
-            <header className='navbar'>
-                <h1>HexColor random</h1>
+        <div className='page'>
+            <header className='header'>
+                <h1>HexColor Random</h1>
             </header>
-            <section>
+            <section className='container'>
                 <RandomColors />
             </section>
-            <footer>
-                Maycol
+            <footer className='footer'>
+                Maycol S. Rincon
             </footer>
 
         </div>
